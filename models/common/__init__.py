@@ -9,3 +9,4 @@ from .image import Image
 from .like import Like
 from .photo import Photo
 from .rect import Rect
+from .size import Size
