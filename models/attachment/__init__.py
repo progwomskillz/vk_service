@@ -1,1 +1,2 @@
-from vk_service.models.attachment.action import Action
+from .action import Action
+from .answer import Answer
