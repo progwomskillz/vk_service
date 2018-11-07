@@ -32,7 +32,7 @@ class CropPhotoFactoryTest(unittest.TestCase):
             values[key] = crop_photo.__dict__[key]
         for key in self.submodels:
             value = self.submodels[key]
-            self.assertIsInstance(crop_photo.__dict__[key], )
+            self.assertIsInstance(crop_photo.__dict__[key], value)
         self.assertEqual(crop_photo.__dict__, values)
 
 
