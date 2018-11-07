@@ -12,3 +12,4 @@ from .currency_factory import CurrencyFactory
 from .doc_factory import DocFactory
 from .graffiti_factory import GraffitiFactory
 from .image_list_factory import ImageListFactory
+from .like_factory import LikeFactory
