@@ -1,10 +1,19 @@
 import unittest
 
-from vk_service.factories.attachment import AttachmentListFactory
-from vk_service.models.attachment import (
-    Photo, Video, Audio, Doc, Link, Note, Poll, Page, Album, Market,
-    MarketAlbum, Sticker, PrettyCard
-)
+from vk_service.factories.attachment.attachment_list_factory import AttachmentListFactory
+from vk_service.models.attachment.photo import Photo
+from vk_service.models.attachment.video import Video
+from vk_service.models.attachment.audio import Audio
+from vk_service.models.attachment.doc import Doc
+from vk_service.models.attachment.link import Link
+from vk_service.models.attachment.note import Note
+from vk_service.models.attachment.poll import Poll
+from vk_service.models.attachment.page import Page
+from vk_service.models.attachment.album import Album
+from vk_service.models.attachment.market import Market
+from vk_service.models.attachment.market_album import MarketAlbum
+from vk_service.models.attachment.sticker import Sticker
+from vk_service.models.attachment.pretty_card import PrettyCard
 
 
 class AttachmentListFactoryTest(unittest.TestCase):

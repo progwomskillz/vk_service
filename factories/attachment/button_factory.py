@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Button
+from vk_service.models.attachment.button import Button
 
 
 class ButtonFactory:

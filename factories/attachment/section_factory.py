@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Section
+from vk_service.models.attachment.section import Section
 
 
 class SectionFactory:

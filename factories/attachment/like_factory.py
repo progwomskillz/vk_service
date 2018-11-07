@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Like
+from vk_service.models.attachment.like import Like
 
 
 class LikeFactory:

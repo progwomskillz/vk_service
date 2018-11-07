@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Graffiti
+from vk_service.models.attachment.graffiti import Graffiti
 
 
 class GraffitiFactory:

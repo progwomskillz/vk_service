@@ -1,4 +1,4 @@
-from vk_service.models.common import Currency
+from vk_service.models.common.currency import Currency
 
 
 class Currency(Currency):

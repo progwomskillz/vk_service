@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Size
+from vk_service.models.attachment.size import Size
 
 
 class SizeListFactory:

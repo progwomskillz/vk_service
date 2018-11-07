@@ -1,7 +1,7 @@
 import unittest
 
-from vk_service.factories.attachment import AudioFactory
-from vk_service.models.attachment import Audio
+from vk_service.factories.attachment.audio_factory import AudioFactory
+from vk_service.models.attachment.audio import Audio
 
 
 class AudioFactoryTest(unittest.TestCase):

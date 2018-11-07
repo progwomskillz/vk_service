@@ -1,4 +1,4 @@
-from vk_service.models.attachment import AudioMessage
+from vk_service.models.attachment.audio_message import AudioMessage
 
 
 class AudioMessageFactory:

@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Price
+from vk_service.models.attachment.price import Price
 
 
 class PriceFactory:

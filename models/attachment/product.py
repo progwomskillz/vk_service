@@ -1,5 +1,5 @@
 from .attachment import Attachment
-from vk_service.factories.attachment import PriceFactory
+from vk_service.factories.attachment.price_factory import PriceFactory
 
 
 class Product(Attachment):

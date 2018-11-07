@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Link
+from vk_service.models.attachment.link import Link
 
 
 class LinkFactory:

@@ -1,5 +1,5 @@
 from .attachment import Attachment
-from vk_service.factories.attachment import ActionFactory
+from vk_service.factories.attachment.action_factory import ActionFactory
 
 
 class Button(Attachment):

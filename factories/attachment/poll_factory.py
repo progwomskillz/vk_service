@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Poll
+from vk_service.models.attachment.poll import Poll
 
 
 class PollFactory:

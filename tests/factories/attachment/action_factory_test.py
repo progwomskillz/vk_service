@@ -1,7 +1,7 @@
 import unittest
 
-from vk_service.factories.attachment import ActionFactory
-from vk_service.models.attachment import Action
+from vk_service.factories.attachment.action_factory import ActionFactory
+from vk_service.models.attachment.action import Action
 
 
 class ActionFactoryTest(unittest.TestCase):

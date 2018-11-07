@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Note
+from vk_service.models.attachment.note import Note
 
 
 class NoteFactory:

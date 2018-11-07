@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Photo
+from vk_service.models.attachment.photo import Photo
 
 
 class PhotoListFactory:

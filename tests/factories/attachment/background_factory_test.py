@@ -1,7 +1,9 @@
 import unittest
 
-from vk_service.factories.attachment import BackgroundFactory
-from vk_service.models.attachment import Background, Point, Image
+from vk_service.factories.attachment.background_factory import BackgroundFactory
+from vk_service.models.attachment.background import Background
+from vk_service.models.attachment.point import Point
+from vk_service.models.attachment.image import Image
 
 
 class BackgroundFactoryTest(unittest.TestCase):

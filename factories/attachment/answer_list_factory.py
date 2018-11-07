@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Answer
+from vk_service.models.attachment.answer import Answer
 
 
 class AnswerListFactory:

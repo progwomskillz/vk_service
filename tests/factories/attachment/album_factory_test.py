@@ -1,7 +1,8 @@
 import unittest
 
-from vk_service.factories.attachment import AlbumFactory
-from vk_service.models.attachment import Album, Photo
+from vk_service.factories.attachment.album_factory import AlbumFactory
+from vk_service.models.attachment.album import Album
+from vk_service.models.attachment.photo import Photo
 
 
 class AlbumFactoryTest(unittest.TestCase):

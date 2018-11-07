@@ -1,5 +1,5 @@
 from .attachment import Attachment
-from vk_service.factories.attachment import SectionFactory
+from vk_service.factories.attachment.section_factory import SectionFactory
 
 
 class Category(Attachment):

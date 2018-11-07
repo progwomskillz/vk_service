@@ -1,5 +1,6 @@
 from .attachment import Attachment
-from vk_service.factories.attachment import ImageListFactory, PointListFactory
+from vk_service.factories.attachment.image_list_factory import ImageListFactory
+from vk_service.factories.attachment.point_list_factory import PointListFactory
 
 
 class Background(Attachment):

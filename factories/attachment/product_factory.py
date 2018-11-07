@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Product
+from vk_service.models.attachment.product import Product
 
 
 class ProductFactory:

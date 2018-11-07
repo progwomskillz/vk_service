@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Background
+from vk_service.models.attachment.background import Background
 
 
 class BackgroundFactory:

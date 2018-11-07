@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Market
+from vk_service.models.attachment.market import Market
 
 
 class MarketFactory:

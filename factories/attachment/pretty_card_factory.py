@@ -1,4 +1,4 @@
-from vk_service.models.attachment import PrettyCard
+from vk_service.models.attachment.pretty_card import PrettyCard
 
 
 class PrettyCardFactory:

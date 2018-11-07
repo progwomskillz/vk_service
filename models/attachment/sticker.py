@@ -1,5 +1,5 @@
 from .attachment import Attachment
-from vk_service.factories.attachment import ImageListFactory
+from vk_service.factories.attachment.image_list_factory import ImageListFactory
 
 
 class Sticker(Attachment):

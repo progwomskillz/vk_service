@@ -1,7 +1,7 @@
 import unittest
 
-from vk_service.factories.attachment import AnswerListFactory
-from vk_service.models.attachment import Answer
+from vk_service.factories.attachment.answer_list_factory import AnswerListFactory
+from vk_service.models.attachment.answer import Answer
 
 
 class AnswerListFactoryTest(unittest.TestCase):

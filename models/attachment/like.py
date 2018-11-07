@@ -1,4 +1,4 @@
-from vk_service.models.common import Like
+from vk_service.models.common.like import Like
 
 
 class Like(Like):

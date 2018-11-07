@@ -1,7 +1,7 @@
 from .attachment import Attachment
-from vk_service.factories.attachment import (
-    PhotoFactory, ProductFactory, ButtonFactory
-)
+from vk_service.factories.attachment.photo_factory import PhotoFactory
+from vk_service.factories.attachment.product_factory import ProductFactory
+from vk_service.factories.attachment.button_factory import ButtonFactory
 
 
 class Link(Attachment):

@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Video
+from vk_service.models.attachment.video import Video
 
 
 class VideoFactory:

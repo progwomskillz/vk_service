@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Album
+from vk_service.models.attachment.album import Album
 
 
 class AlbumFactory:

@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Page
+from vk_service.models.attachment.page import Page
 
 
 class PageFactory:

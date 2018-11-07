@@ -1,5 +1,5 @@
 from .attachment import Attachment
-from vk_service.factories.attachment import PhotoFactory
+from vk_service.factories.attachment.photo_factory import PhotoFactory
 
 
 class MarketAlbum(Attachment):

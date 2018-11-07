@@ -1,4 +1,4 @@
-from vk_service.models.common import Size
+from vk_service.models.common.size import Size
 
 
 class Size(Size):

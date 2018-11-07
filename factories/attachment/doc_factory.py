@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Doc
+from vk_service.models.attachment.doc import Doc
 
 
 class DocFactory:

@@ -1,8 +1,16 @@
-from . import (
-    PhotoFactory, VideoFactory, AudioFactory, DocFactory, LinkFactory,
-    NoteFactory, PollFactory, PageFactory, AlbumFactory, MarketFactory,
-    MarketAlbumFactory, StickerFactory, PrettyCardFactory
-)
+from .photo_factory import PhotoFactory
+from .video_factory import VideoFactory
+from .audio_factory import AudioFactory
+from .doc_factory import DocFactory
+from .link_factory import LinkFactory
+from .note_factory import NoteFactory
+from .poll_factory import PollFactory
+from .page_factory import PageFactory
+from .album_factory import AlbumFactory
+from .market_factory import MarketFactory
+from .market_album_factory import MarketAlbumFactory
+from .sticker_factory import StickerFactory
+from .pretty_card_factory import PrettyCardFactory
 
 
 class AttachmentListFactory:

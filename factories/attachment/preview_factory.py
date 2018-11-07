@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Preview
+from vk_service.models.attachment.preview import Preview
 
 
 class PreviewFactory:

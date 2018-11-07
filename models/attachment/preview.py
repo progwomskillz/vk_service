@@ -1,7 +1,7 @@
 from .attachment import Attachment
-from vk_service.factories.attachment import (
-    PhotoFactory, GraffitiFactory, AudioMessageFactory
-)
+from vk_service.factories.attachment.photo_factory import PhotoFactory
+from vk_service.factories.attachment.graffiti_factory import GraffitiFactory
+from vk_service.factories.attachment.audio_message_factory import AudioMessageFactory
 
 
 class Preview(Attachment):

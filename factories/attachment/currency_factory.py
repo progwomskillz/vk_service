@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Currency
+from vk_service.models.attachment.currency import Currency
 
 
 class CurrencyFactory:

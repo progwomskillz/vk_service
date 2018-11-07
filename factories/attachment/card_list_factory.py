@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Card
+from vk_service.models.attachment.card import Card
 
 
 class CardListFactory:

@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Category
+from vk_service.models.attachment.category import Category
 
 
 class CategoryFactory:

@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Action
+from vk_service.models.attachment.action import Action
 
 
 class ActionFactory:

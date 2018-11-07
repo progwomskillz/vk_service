@@ -1,7 +1,7 @@
 from .attachment import Attachment
-from vk_service.factories.attachment import (
-    AnswerListFactory, PhotoFactory, BackgroundFactory
-)
+from vk_service.factories.attachment.answer_list_factory import AnswerListFactory
+from vk_service.factories.attachment.photo_factory import PhotoFactory
+from vk_service.factories.attachment.background_factory import BackgroundFactory
 
 
 class Poll(Attachment):

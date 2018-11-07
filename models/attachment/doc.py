@@ -1,5 +1,5 @@
 from .attachment import Attachment
-from vk_service.factories.attachment import PreviewFactory
+from vk_service.factories.attachment.preview_factory import PreviewFactory
 
 
 class Doc(Attachment):

@@ -1,5 +1,5 @@
-from vk_service.models.common import Photo
-from vk_service.factories.attachment import SizeListFactory
+from vk_service.models.common.photo import Photo
+from vk_service.factories.attachment.size_list_factory import SizeListFactory
 
 
 class Photo(Photo):

@@ -1,4 +1,4 @@
-from vk_service.models.attachment import MarketAlbum
+from vk_service.models.attachment.market_album import MarketAlbum
 
 
 class MarketAlbumFactory:

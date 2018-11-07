@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Sticker
+from vk_service.models.attachment.sticker import Sticker
 
 
 class StickerFactory:

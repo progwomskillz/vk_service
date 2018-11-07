@@ -1,5 +1,5 @@
 from .attachment import Attachment
-from vk_service.factories.attachment import CardListFactory
+from vk_service.factories.attachment.card_list_factory import CardListFactory
 
 
 class PrettyCard(Attachment):

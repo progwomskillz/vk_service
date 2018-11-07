@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Point
+from vk_service.models.attachment.point import Point
 
 
 class PointListFactory:
