@@ -26,3 +26,4 @@ from .pretty_card_factory import PrettyCardFactory
 from .preview_factory import PreviewFactory
 from .price_factory import PriceFactory
 from .product_factory import ProductFactory
+from .section_factory import SectionFactory
