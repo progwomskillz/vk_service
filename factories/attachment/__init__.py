@@ -27,3 +27,4 @@ from .preview_factory import PreviewFactory
 from .price_factory import PriceFactory
 from .product_factory import ProductFactory
 from .section_factory import SectionFactory
+from .size_list_factory import SizeListFactory
