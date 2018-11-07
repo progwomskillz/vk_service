@@ -16,3 +16,4 @@ from .link import Link
 from .market_album import MarketAlbum
 from .market import Market
 from .note import Note
+from .page import Page
