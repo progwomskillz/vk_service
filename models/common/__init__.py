@@ -1,1 +1,2 @@
-from vk_service.models.common.common import Common
+from .city import City
+from .common import Common
