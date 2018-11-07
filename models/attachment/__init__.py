@@ -10,3 +10,4 @@ from .category import Category
 from .currency import Currency
 from .doc import Doc
 from .graffiti import Graffiti
+from .image import Image
