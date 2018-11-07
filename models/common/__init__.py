@@ -6,3 +6,4 @@ from .crop_photo import CropPhoto
 from .crop import Crop
 from .currency import Currency
 from .image import Image
+from .like import Like
