@@ -1,7 +1,7 @@
 import unittest
 
 from vk_service.factories.attachment.link_factory import LinkFactory
-from vk_service.models.attachment.like import Link
+from vk_service.models.attachment.link import Link
 from vk_service.models.attachment.photo import Photo
 from vk_service.models.attachment.product import Product
 from vk_service.models.attachment.button import Button
