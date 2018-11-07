@@ -18,3 +18,4 @@ from .market_album_factory import MarketAlbumFactory
 from .market_factory import MarketFactory
 from .note_factory import NoteFactory
 from .page_factory import PageFactory
+from .photo_factory import PhotoFactory
