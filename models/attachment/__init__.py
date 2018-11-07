@@ -18,3 +18,4 @@ from .market import Market
 from .note import Note
 from .page import Page
 from .photo import Photo
+from .point import Point
