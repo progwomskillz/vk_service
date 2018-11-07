@@ -11,3 +11,4 @@ from .currency import Currency
 from .doc import Doc
 from .graffiti import Graffiti
 from .image import Image
+from .like import Like
