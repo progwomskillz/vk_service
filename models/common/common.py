@@ -1,4 +1,7 @@
-class Common:
+from abc import ABC
+
+
+class Common(ABC):
     def __init__(self, values, factories={}):
         for key in values:
             if key in factories:
