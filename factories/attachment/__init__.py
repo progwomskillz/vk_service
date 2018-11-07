@@ -15,3 +15,4 @@ from .image_list_factory import ImageListFactory
 from .like_factory import LikeFactory
 from .link_factory import LinkFactory
 from .market_album_factory import MarketAlbumFactory
+from .market_factory import MarketFactory
