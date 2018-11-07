@@ -20,3 +20,4 @@ from .note_factory import NoteFactory
 from .page_factory import PageFactory
 from .photo_factory import PhotoFactory
 from .photo_list_factory import PhotoListFactory
+from .point_list_factory import PointListFactory
