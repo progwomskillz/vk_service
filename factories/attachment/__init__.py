@@ -25,3 +25,4 @@ from .poll_factory import PollFactory
 from .pretty_card_factory import PrettyCardFactory
 from .preview_factory import PreviewFactory
 from .price_factory import PriceFactory
+from .product_factory import ProductFactory
