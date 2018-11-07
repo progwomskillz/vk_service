@@ -29,3 +29,4 @@ from .product_factory import ProductFactory
 from .section_factory import SectionFactory
 from .size_list_factory import SizeListFactory
 from .sticker_factory import StickerFactory
+from .video_factory import VideoFactory
