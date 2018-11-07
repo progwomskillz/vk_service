@@ -12,3 +12,4 @@ from .doc import Doc
 from .graffiti import Graffiti
 from .image import Image
 from .like import Like
+from .link import Link
