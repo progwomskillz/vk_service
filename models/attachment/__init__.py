@@ -20,3 +20,5 @@ from .page import Page
 from .photo import Photo
 from .point import Point
 from .poll import Poll
+from .pretty_card import PrettyCard
+from .preview import Preview
