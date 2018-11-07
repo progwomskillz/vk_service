@@ -1,5 +1,5 @@
 from .group_info import GroupInfo
-from vk_service.factories.attachment.image_list_factory import ImageListFactory
+from vk_service.factories.group.image_list_factory import ImageListFactory
 
 
 class Cover(GroupInfo):
