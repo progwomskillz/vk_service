@@ -1,4 +1,4 @@
-from vk_service.models.attachment import Attachment
+from vk_service.models.attachment.attachment import Attachment
 
 class Action(Attachment):
     pass
