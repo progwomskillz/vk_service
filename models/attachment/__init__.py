@@ -8,3 +8,4 @@ from .button import Button
 from .card import Card
 from .category import Category
 from .currency import Currency
+from .doc import Doc
