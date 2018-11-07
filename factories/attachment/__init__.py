@@ -9,3 +9,4 @@ from .button_factory import ButtonFactory
 from .card_list_factory import CardListFactory
 from .category_factory import CategoryFactory
 from .currency_factory import CurrencyFactory
+from .doc_factory import DocFactory
