@@ -23,3 +23,4 @@ from .poll import Poll
 from .pretty_card import PrettyCard
 from .preview import Preview
 from .price import Price
+from .product import Product
