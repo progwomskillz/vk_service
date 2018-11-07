@@ -13,3 +13,4 @@ from .graffiti import Graffiti
 from .image import Image
 from .like import Like
 from .link import Link
+from .market_album import MarketAlbum
