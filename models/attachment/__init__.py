@@ -26,3 +26,5 @@ from .price import Price
 from .product import Product
 from .section import Section
 from .size import Size
+from .sticker import Sticker
+from .video import Video
