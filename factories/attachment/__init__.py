@@ -23,3 +23,4 @@ from .photo_list_factory import PhotoListFactory
 from .point_list_factory import PointListFactory
 from .poll_factory import PollFactory
 from .pretty_card_factory import PrettyCardFactory
+from .preview_factory import PreviewFactory
