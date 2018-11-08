@@ -7,9 +7,9 @@ from vk_service.factories.group.group_factory import GroupFactory
 class News(Common, ABC):
     def __init__(self, values, factories={}, profiles, groups):
         super(News, self).__init__(values, factories)
-        self.owner = self._set_owner(profiles, groups)
+        self.owner = self._get_owner(profiles, groups)
 
-    def _set_owner(self, profiles, groups):
+    def _get_owner(self, profiles, groups):
         if self.source_id > 0:
             factory = ProfileFactory()
             profile = self._find_profile(profiles)
