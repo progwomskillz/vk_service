@@ -11,7 +11,7 @@ from vk_service.models.group.group import Group
 from vk_service.models.profile.profile import Profile
 
 
-class TextPostFactoryText(unittest.TestCase):
+class TextPostFactoryTest(unittest.TestCase):
     def setUp(self):
         self.factory = TextPostFactory()
         self.size = {
