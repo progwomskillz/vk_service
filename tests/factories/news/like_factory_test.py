@@ -11,9 +11,9 @@ class LikeFactoryTest(unittest.TestCase):
 
     def test_factory_build(self):
         values = self.values.copy()
-        comment = self.factory.build(values)
-        self.assertIsInstance(comment, Comment)
-        self.assertEqual(comment.__dict__, values)
+        like = self.factory.build(values)
+        self.assertIsInstance(like, Like)
+        self.assertEqual(like.__dict__, values)
 
 
 if __name__ == '__main__':
