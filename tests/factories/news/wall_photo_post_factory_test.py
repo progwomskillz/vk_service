@@ -28,8 +28,8 @@ class WallPhotoPostFactoryTest(unittest.TestCase):
         self.photo_list = [self.photo.copy(), self.photo.copy()]
         self.photos = {'count': 2, 'items': self.photo_list.copy()}
         self.values = {
-            "type": "wall_photo", "source_id": -41437811, "date": 1541681474,
-            "post_id": 333960, 'photos': self.photos.copy()
+            'type': 'wall_photo', 'source_id': -41437811, 'date': 1541681474,
+            'post_id': 333960, 'photos': self.photos.copy()
         }
         self.submodels = {
             'photos': Photos
@@ -37,26 +37,26 @@ class WallPhotoPostFactoryTest(unittest.TestCase):
         self.profiles = []
         self.groups = [
             {
-                "id": 41437811, "name": "МХК",
-                "screen_name": "mhkoff", "is_closed": 0,
-                "type": "page", "is_admin": 0, "is_member": 1,
-                "photo_50": "https://pp.userap...Gk3gGxO8c.jpg?ava=1",
-                "photo_100": "https://pp.userap...jgK-93vSo.jpg?ava=1",
-                "photo_200": "https://pp.userap...DjxFwb1A8.jpg?ava=1"
+                'id': 41437811, 'name': 'МХК',
+                'screen_name': 'mhkoff', 'is_closed': 0,
+                'type': 'page', 'is_admin': 0, 'is_member': 1,
+                'photo_50': 'https://pp.userap...Gk3gGxO8c.jpg?ava=1',
+                'photo_100': 'https://pp.userap...jgK-93vSo.jpg?ava=1',
+                'photo_200': 'https://pp.userap...DjxFwb1A8.jpg?ava=1'
             }, {
-                "id": 72495085, "name": "/dev/null",
-                "screen_name": "tnull", "is_closed": 0,
-                "type": "page", "is_admin": 0, "is_member": 1,
-                "photo_50": "https://sun1-6.us...-h6o_8VS8.jpg?ava=1",
-                "photo_100": "https://sun1-5.us...PTdjZrLgo.jpg?ava=1",
-                "photo_200": "https://sun1-20.u...EBzYm5fAU.jpg?ava=1"
+                'id': 72495085, 'name': '/dev/null',
+                'screen_name': 'tnull', 'is_closed': 0,
+                'type': 'page', 'is_admin': 0, 'is_member': 1,
+                'photo_50': 'https://sun1-6.us...-h6o_8VS8.jpg?ava=1',
+                'photo_100': 'https://sun1-5.us...PTdjZrLgo.jpg?ava=1',
+                'photo_200': 'https://sun1-20.u...EBzYm5fAU.jpg?ava=1'
             }, {
-                "id": 30666517, "name": "Типичный программист",
-                "screen_name": "tproger", "is_closed": 0,
-                "type": "page", "is_admin": 0, "is_member": 1,
-                "photo_50": "https://pp.userap...KNrvjYkdo.jpg?ava=1",
-                "photo_100": "https://pp.userap...JJG4iknq0.jpg?ava=1",
-                "photo_200": "https://pp.userap...eV7nJitGY.jpg?ava=1"
+                'id': 30666517, 'name': 'Типичный программист',
+                'screen_name': 'tproger', 'is_closed': 0,
+                'type': 'page', 'is_admin': 0, 'is_member': 1,
+                'photo_50': 'https://pp.userap...KNrvjYkdo.jpg?ava=1',
+                'photo_100': 'https://pp.userap...JJG4iknq0.jpg?ava=1',
+                'photo_200': 'https://pp.userap...eV7nJitGY.jpg?ava=1'
             }
         ]
 
