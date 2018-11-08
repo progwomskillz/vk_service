@@ -8,8 +8,8 @@ class GeoFactoryTest(unittest.TestCase):
     def setUp(self):
         self.factory = GeoFactory()
         self.values = {
-            'id': 1, 'title': 'RedS', 'latitude': 87, 'longitude': 178,
-            'type': 'Park', 'country': 1, 'city': 1, 'address': 'RS st. 1'
+            'place_id': 1, 'title': 'RedS', 'type': 'Park', 'country_id': 1,
+            'city_id': 1, 'address': 'RS st. 1', 'showmap': 1
         }
 
     def test_factory_build(self):
