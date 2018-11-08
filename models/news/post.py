@@ -5,7 +5,7 @@ from vk_service.factories.group.group_factory import GroupFactory
 
 
 class Post(Common, ABC):
-    def __init__(self, post, factories={}, profiles, groups):
+    def __init__(self, post, profiles, groups, factories={}):
         super(Post, self).__init__(post, factories)
         self.owner = self._get_owner(profiles, groups)
 

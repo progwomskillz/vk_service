@@ -19,4 +19,4 @@ class TextPost(Post):
             'views': ViewFactory(),
             'post_source': PostSourceFactory()
         }
-        super(TextPost, self).__init__(post, factories, profiles, groups)
+        super(TextPost, self).__init__(post, profiles, groups, factories)
