@@ -4,9 +4,9 @@ from vk_service.factories.profile.profile_factory import ProfileFactory
 from vk_service.factories.group.group_factory import GroupFactory
 
 
-class News(Common, ABC):
+class Post(Common, ABC):
     def __init__(self, values, factories={}, profiles, groups):
-        super(News, self).__init__(values, factories)
+        super(Post, self).__init__(values, factories)
         self.owner = self._get_owner(profiles, groups)
 
     def _get_owner(self, profiles, groups):
