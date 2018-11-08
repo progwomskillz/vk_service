@@ -8,7 +8,7 @@ from vk_service.factories.news.view_factory import ViewFactory
 from vk_service.factories.news.post_source_factory import PostSourceFactory
 
 
-class PostText(Post):
+class TextPost(Post):
     def __init__(self, post, profiles, groups):
         factories = {
             'comments': CommentFactory(),
@@ -19,4 +19,4 @@ class PostText(Post):
             'views': ViewFactory(),
             'post_source': PostSourceFactory()
         }
-        super(PostText, self).__init__(post, factories, profiles, groups)
+        super(TextPost, self).__init__(post, factories, profiles, groups)
