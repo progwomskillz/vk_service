@@ -7,4 +7,4 @@ class WallPhotoPost(Post):
         factories = {
             'photos': PhotosFactory()
         }
-        super(TextPost, self).__init__(post, profiles, groups, factories)
+        super(WallPhotoPost, self).__init__(post, profiles, groups, factories)
