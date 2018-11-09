@@ -6,6 +6,7 @@ from vk_service.factories.attachment.attachment_list_factory import AttachmentLi
 from vk_service.factories.news.geo_factory import GeoFactory
 from vk_service.factories.news.view_factory import ViewFactory
 from vk_service.factories.news.post_source_factory import PostSourceFactory
+from vk_service.factories.news.repost_source_post_list_factory import RepostSourcePostListFactory
 
 
 class TextPost(Post):
@@ -20,3 +21,9 @@ class TextPost(Post):
             'post_source': PostSourceFactory()
         }
         super(TextPost, self).__init__(post, profiles, groups, factories)
+        if 'copy_history' in post:
+            self.copy_history = self._set_copy_history(self.copy_history, profiles, groups)
+
+    def _set_copy_history(self, copy_history, profiles, groups):
+        factory = RepostSourcePostListFactory()
+        return factory.build(copy_history, profiles, groups)

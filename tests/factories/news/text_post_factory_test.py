@@ -7,6 +7,7 @@ from vk_service.models.news.comment import Comment
 from vk_service.models.news.like import Like
 from vk_service.models.news.repost import Repost
 from vk_service.models.news.view import View
+from vk_service.models.news.repost_source_post import RepostSourcePost
 from vk_service.models.group.group import Group
 from vk_service.models.profile.profile import Profile
 
@@ -41,13 +42,19 @@ class TextPostFactoryTest(unittest.TestCase):
         }
         self.repost = {'count': 24, 'user_reposted': 0}
         self.view = {'count': 23098}
+        self.repost = {
+            'id': 456249429, 'owner_id': -33016113, 'from_id': -33016113,
+            'date': 1539987637, 'post_type': 'photo', 'text': '',
+            'attachments': [], 'post_source': self.post_source.copy()
+        }
+        self.copy_history =[self.repost.copy(), self.repost.copy()]
         self.values = {
             'type': 'post', 'source_id': -41437811, 'date': 1541681474, 'post_id': 333960,
             'post_type': 'post', 'text': 'Хороший мальчик спас хороших мальчиков',
             'marked_as_ads': 0, 'attachments': self.attachments.copy(),
             'post_source': self.post_source.copy(), 'comments': self.comment.copy(),
             'likes': self.like.copy(), 'reposts': self.repost.copy(),
-            'views': self.view.copy()
+            'views': self.view.copy(), 'copy_history': self.copy_history.copy()
         }
         self.submodels = {
             'attachments': list,
@@ -55,7 +62,8 @@ class TextPostFactoryTest(unittest.TestCase):
             'comments': Comment,
             'likes': Like,
             'reposts': Repost,
-            'views': View
+            'views': View,
+            'copy_history': list
         }
         self.profiles = []
         self.groups = [
@@ -80,6 +88,13 @@ class TextPostFactoryTest(unittest.TestCase):
                 'photo_50': 'https://pp.userap...KNrvjYkdo.jpg?ava=1',
                 'photo_100': 'https://pp.userap...JJG4iknq0.jpg?ava=1',
                 'photo_200': 'https://pp.userap...eV7nJitGY.jpg?ava=1'
+            }, {
+                'id': 33016113, 'name': 'МХК',
+                'screen_name': 'mhkoff', 'is_closed': 0,
+                'type': 'page', 'is_admin': 0, 'is_member': 1,
+                'photo_50': 'https://pp.userap...Gk3gGxO8c.jpg?ava=1',
+                'photo_100': 'https://pp.userap...jgK-93vSo.jpg?ava=1',
+                'photo_200': 'https://pp.userap...DjxFwb1A8.jpg?ava=1'
             }
         ]
 
@@ -93,6 +108,8 @@ class TextPostFactoryTest(unittest.TestCase):
             values[key] = text_post.__dict__[key]
         for key in self.submodels:
             self.assertIsInstance(text_post.__dict__[key], self.submodels[key])
+        for item in text_post.copy_history:
+            self.assertIsInstance(item, RepostSourcePost)
         if values['source_id'] > 0:
             self.assertIsInstance(text_post.owner, Profile)
         else:
