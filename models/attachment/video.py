@@ -1,5 +1,5 @@
-from .attachment import Attachment
+from vk_service.models.common.video import Video
 
 
-class Video(Attachment):
+class Video(Video):
     pass
