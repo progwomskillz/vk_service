@@ -1,13 +1,13 @@
 import unittest
 
-from vk_service.factories.news.friends_factory import FriendsFactory
-from vk_service.models.news.friends import Friends
+from vk_service.factories.news.friend_list_meta_data_factory import FriendListMetaDataFactory
+from vk_service.models.news.friend_list_meta_data import FriendListMetaData
 from vk_service.models.news.friend import Friend
 
 
-class FriendsFactoryTest(unittest.TestCase):
+class FriendListMetaDataFactoryTest(unittest.TestCase):
     def setUp(self):
-        self.factory = FriendsFactory()
+        self.factory = FriendListMetaDataFactory()
         self.friend = {'user_id': 53}
         self.friends = [self.friend.copy(), self.friend.copy()]
         self.values = {'count': 2, 'items': self.friends.copy()}
@@ -23,7 +23,7 @@ class FriendsFactoryTest(unittest.TestCase):
         for key in self.submodels:
             for item in friends.__dict__[key]:
                 self.assertIsInstance(item, self.submodels[key])
-        self.assertIsInstance(friends, Friends)
+        self.assertIsInstance(friends, FriendListMetaData)
         self.assertEqual(friends.__dict__, values)
 
 

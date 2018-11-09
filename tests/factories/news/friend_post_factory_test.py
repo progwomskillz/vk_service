@@ -2,7 +2,7 @@ import unittest
 
 from vk_service.factories.news.friend_post_factory import FriendPostFactory
 from vk_service.models.news.friend_post import FriendPost
-from vk_service.models.news.friends import Friends
+from vk_service.models.news.friend_list_meta_data import FriendListMetaData
 from vk_service.models.profile.profile import Profile
 from vk_service.models.group.group import Group
 
@@ -18,7 +18,7 @@ class FriendPostFactoryTest(unittest.TestCase):
             'friends': self.friends.copy()
         }
         self.submodels = {
-            'friends': Friends
+            'friends': FriendListMetaData
         }
         self.profiles = [
             {

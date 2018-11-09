@@ -1,13 +1,13 @@
 import unittest
 
-from vk_service.factories.news.photos_factory import PhotosFactory
-from vk_service.models.news.photos import Photos
+from vk_service.factories.news.photo_list_meta_data_factory import PhotoListMetaDataFactory
+from vk_service.models.news.photo_list_meta_data import PhotoListMetaData
 from vk_service.models.news.photo import Photo
 
 
-class PhotosFactoryTest(unittest.TestCase):
+class PhotoListMetaDataFactoryTest(unittest.TestCase):
     def setUp(self):
-        self.factory = PhotosFactory()
+        self.factory = PhotoListMetaDataFactory()
         self.size = {
             'src': 'http://example.com/m.jpg', 'width': 130, 'height': 87,
             'type': 'm'
@@ -37,7 +37,7 @@ class PhotosFactoryTest(unittest.TestCase):
         for key in self.submodels:
             for item in photos.__dict__[key]:
                 self.assertIsInstance(item, self.submodels[key])
-        self.assertIsInstance(photos, Photos)
+        self.assertIsInstance(photos, PhotoListMetaData)
         self.assertEqual(photos.__dict__, values)
 
 

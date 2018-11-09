@@ -2,7 +2,7 @@ import unittest
 
 from vk_service.factories.news.wall_photo_post_factory import WallPhotoPostFactory
 from vk_service.models.news.wall_photo_post import WallPhotoPost
-from vk_service.models.news.photos import Photos
+from vk_service.models.news.photo_list_meta_data import PhotoListMetaData
 from vk_service.models.profile.profile import Profile
 from vk_service.models.group.group import Group
 
@@ -32,7 +32,7 @@ class WallPhotoPostFactoryTest(unittest.TestCase):
             'post_id': 333960, 'photos': self.photos.copy()
         }
         self.submodels = {
-            'photos': Photos
+            'photos': PhotoListMetaData
         }
         self.profiles = []
         self.groups = [
