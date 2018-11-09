@@ -3,7 +3,7 @@ from vk_service.factories.attachment.attachment_list_factory import AttachmentLi
 from vk_service.factories.news.post_source_factory import PostSourceFactory
 
 
-class RepostSourcePost(Post):
+class RepostSourcePost(RepostSource):
     def __init__(self, post, profiles, groups):
         factories = {
             'attachments': AttachmentListFactory(),
