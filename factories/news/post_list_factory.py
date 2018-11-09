@@ -5,7 +5,10 @@ from .video_post_factory import VideoPostFactory
 
 
 class PostListFactory:
-    def build(self, values, profiles, groups):
+    def build(self, values):
+        newsfeed = values['items']
+        profiles = values['profiles']
+        groups = values['groups']
         posts = []
         factories = {
             'post': TextPostFactory(),
@@ -13,9 +16,9 @@ class PostListFactory:
             'friend': FriendPostFactory(),
             'video': VideoPostFactory()
         }
-        for value in values:
-            if value['type'] in factories:
-                factory = factories[value['type']]
-                post = factory.build(value, profiles, groups)
+        for news in newsfeed:
+            if news['type'] in factories:
+                factory = factories[news['type']]
+                post = factory.build(news, profiles, groups)
                 posts.append(post)
         return posts
